@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  @apply text-2xl;
+}
+
+.button {
+  @apply px-8 py-4 text-gray-500 bg-purple-400;
+}
