@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.landing {
+  @apply p-10 bg-[#DDE7D9] h-screen relative;
+}
+
+.buttons {
+  @apply space-x-10 flex justify-end;
+}
+
+.btn1 {
+  @apply px-5 py-1 bg-black text-white rounded-3xl border-2 border-black;
+}
+
+.btn2 {
+  @apply bg-[#BECFB7] text-black px-5 py-1  text-black rounded-3xl border-2 border-black;
+}
+
+.text1 {
+  @apply w-2/6 my-5 text-lg;
+}
+
+.text2 {
+  @apply my-5 text-lg grid grid-cols-6 gap-4;
+}
+.text2Content {
+  @apply col-end-7 col-span-2;
+}
+
+.text3 {
+  @apply w-2/6 mt-5 ml-10 text-lg;
+}
+
+.text4 {
+  @apply grid grid-cols-2  place-content-around mt-10;
+}
+
+.text4b {
+  @apply grid place-content-center;
+}
+.h2 {
+  @apply font-bold  text-6xl opacity-10 translate-y-1/2;
+}
+.h4 {
+  @apply font-bold;
+}
+
+.p {
+  @apply font-medium opacity-60;
+}
+
+.imageBox {
+  @apply absolute;
+}
+
+/*  custom css*/
+
+.imageBox {
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
