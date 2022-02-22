@@ -1,7 +1,6 @@
 import React from 'react'
 import classes from './LandingPage.module.css'
-import logo from "../../../assets/images/logo.png"
-import ellipse from "../../../assets/images/ellipse.png"
+import Logo from '../../UI/Logo/Logo'
 
 
 
@@ -9,8 +8,7 @@ function LandingPage() {
   return (
     <div className={classes.landing}>
         <div className={classes.imageBox}>
-            <img src={logo} alt="logo" />
-            <img src={ellipse} alt="ellipse" />
+           <Logo/>
         </div>
 
         <div className={classes.buttons}>
@@ -41,6 +39,13 @@ function LandingPage() {
                 <p className={classes.p}>
                     See which expenses eat up too much of the pie. 
                     Personalize your reports with custom categories..</p>
+        </div>
+        <div className={classes.text4}>
+            <p>© 2022 TRACK!T</p>
+            <div className={classes.text4b}>
+                <p>COMPANY</p>
+                <p>CONTACT US</p>
+            </div>
         </div>
     </div>
   )

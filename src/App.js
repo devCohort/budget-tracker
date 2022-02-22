@@ -3,6 +3,7 @@ import * as React from "react";
 import Login from "./Components/pages/LoginPage/Login";
 import classes from "./App.module.css";
 import LandingPage from "./Components/pages/LandingPage/LandingPage";
+import './App.css'
 
 
 function App() {
