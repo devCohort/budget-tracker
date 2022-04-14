@@ -15,7 +15,7 @@ function LandingPage() {
 
         <div className={classes.buttons}>
            <Link to="/login">  <button className={classes.btn1}>Sign in</button></Link>
-            <button className={classes.btn2}>Sign up</button>
+           <Link to= "/signUp"> <button className={classes.btn2}>Sign up</button></Link>
         </div>
         
         <div className={classes.text1}>

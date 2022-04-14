@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../UI/Logo/Logo';
+import Title from '../../UI/Title/Title';
 import classes from './LoginPage.module.css'
 
 function Login() {
@@ -8,7 +9,7 @@ function Login() {
   <div className={classes.login}>
       <div className={classes.loginLogo}><Logo/></div>
       <div className={classes.rightBox}> 
-        <h1>Login</h1>
+        <Title title="Log in"/>
         <div className={classes.buttonGroup}>
           <button className={classes.button}>facebook</button>
           <button className={classes.button}>google</button>

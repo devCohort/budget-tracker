@@ -14,10 +14,6 @@
   @apply w-2/4 p-14 bg-white;
 }
 
-.rightBox h1 {
-  @apply font-bold text-2xl;
-}
-
 .or {
   @apply font-light py-14 text-5xl opacity-60 place-items-center grid;
 }
