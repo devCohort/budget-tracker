@@ -17,26 +17,21 @@
 .or {
   @apply font-light py-14 text-5xl opacity-60 place-items-center grid;
 }
-.buttonGroup {
-  @apply flex my-10;
-}
-
-.button {
-  @apply mx-10 opacity-60;
-}
 
 .input {
-  @apply w-11/12 my-2 h-10 border-b outline-none;
+  @apply w-full my-2 h-10 border-b outline-none;
 }
 
 .submit {
-  @apply w-full h-14 my-4 bg-[#A9C79B] rounded-lg text-3xl text-white py-2 font-bold;
+  @apply w-full h-14 my-4 rounded-lg text-3xl text-white py-2 font-bold;
 }
 
 .checkBox {
-  @apply flex justify-around;
+  @apply flex justify-around items-stretch;
 }
-
+.check {
+  @apply self-center;
+}
 .remember {
   @apply flex justify-between mt-3;
 }
@@ -47,14 +42,13 @@
 .signLink {
   @apply text-[#A9C79B] font-thin;
 }
+.passwordEye {
+  @apply mr-3 text-2xl;
+}
 /*custom css */
 .rightBox {
   border-radius: 6rem;
 }
-
-.button {
-  width: 250px;
-  height: 50px;
-  border-radius: 10px;
-  border: 1px black solid;
+.submit {
+  background-color: #a9c79b !important;
 }

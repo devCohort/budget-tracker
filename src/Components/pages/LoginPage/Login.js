@@ -1,19 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ButtonGroup from '../../UI/Button Group/ButtonGroup';
 import Logo from '../../UI/Logo/Logo';
 import Title from '../../UI/Title/Title';
 import classes from './LoginPage.module.css'
+import {AiFillEye, AiFillEyeInvisible} from 'react-icons/ai'
+
 
 function Login() {
+
+const [passIcon,setPassIcon]=useState(true) 
+
+
   return (
   <div className={classes.login}>
       <div className={classes.loginLogo}><Logo/></div>
       <div className={classes.rightBox}> 
         <Title title="Log in"/>
-        <div className={classes.buttonGroup}>
-          <button className={classes.button}>facebook</button>
-          <button className={classes.button}>google</button>
-        </div>
+       <ButtonGroup/>
         <div className={classes.or}>-OR-</div>
         <form>
           <input  className={classes.input}type="email" name="email" id="" placeholder='Email Address' />
@@ -23,6 +27,13 @@ function Login() {
             <input className={classes.check}type="checkbox" name="" id="" />
             <label>Remember me</label> 
             </div>
+            {passIcon
+            ?
+            <AiFillEye className={classes.passwordEye} onClick={()=>setPassIcon(false)}/>
+            :
+            <AiFillEyeInvisible className={classes.passwordEye} onClick={()=>setPassIcon(true)}/>
+          }
+          
           </div>
           <button className={classes.submit} type="submit">Log in</button>
           <div className={classes.remember}>
