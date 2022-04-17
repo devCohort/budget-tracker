@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.signUp {
+  @apply flex flex-row h-screen bg-[#DDE7D9];
+}
+.loginBox {
+  @apply w-2/4  grid place-content-center;
+}
+.rightBox {
+  @apply w-2/4 p-14 bg-white;
+}
+.or {
+  @apply font-light py-14 text-5xl opacity-60 place-items-center grid;
+}
+.input {
+  @apply w-full my-2 h-10 border-b outline-none;
+}
+
+.submit {
+  @apply w-full h-14 my-4 rounded-lg text-3xl text-white py-2 font-bold;
+}
+.remember {
+  @apply flex justify-between mt-3;
+}
+.signLink {
+  @apply text-[#A9C79B] font-thin;
+}
+.passwordEye {
+  @apply text-2xl;
+}
+/*custom css */
+.rightBox {
+  border-radius: 6rem;
+}
+.passwordEye {
+  margin-top: -40px;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  z-index: 2;
+}
+.submit {
+  background-color: #a9c79b;
+}

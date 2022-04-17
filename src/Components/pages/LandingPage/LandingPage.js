@@ -1,6 +1,8 @@
 import React from 'react'
 import classes from './LandingPage.module.css'
 import Logo from '../../UI/Logo/Logo'
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -12,8 +14,8 @@ function LandingPage() {
         </div>
 
         <div className={classes.buttons}>
-            <button className={classes.btn1}>Sign in</button>
-            <button className={classes.btn2}>Sign up</button>
+           <Link to="/login">  <button className={classes.btn1}>Sign in</button></Link>
+           <Link to= "/signUp"> <button className={classes.btn2}>Sign up</button></Link>
         </div>
         
         <div className={classes.text1}>
