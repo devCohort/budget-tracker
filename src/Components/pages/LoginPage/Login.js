@@ -40,7 +40,7 @@ const [passIcon,setPassIcon]=useState(true)
             <div>
               Don't have an Account?<Link to="/signUp" className={classes.signLink}>Sign Up</Link> 
             </div>
-            <div>Forgot Password</div>
+            <div><Link to="/forgotPassword">Forgot Password</Link></div>
           </div>       
         </form>
       </div>

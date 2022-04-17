@@ -4,6 +4,7 @@ import Login from "./Components/pages/LoginPage/Login";
 import LandingPage from "./Components/pages/LandingPage/LandingPage";
 import './App.css'
 import SignUp from "./Components/pages/SignUpPage/SignUp";
+import ForgotPassword from "./Components/pages/ForgotPassword/ForgotPassword";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="login" element={<Login />} />
         <Route path="/signUp" element={<SignUp/>}/>
+        <Route path="/forgotPassword" element={<ForgotPassword/>}/>
       </Routes>
       </div>
   );
