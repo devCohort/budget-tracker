@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.submitBox {
+  @apply w-full h-14 my-4 rounded-lg text-3xl text-white py-2 font-bold ;
+  background-color: #a9c79a !important;
+}
+

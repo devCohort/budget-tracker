@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ButtonGroup from '../../UI/Button Group/ButtonGroup';
-import Logo from '../../UI/Logo/Logo';
 import Title from '../../UI/Title/Title';
 import classes from './LoginPage.module.css'
 import {AiFillEye, AiFillEyeInvisible} from 'react-icons/ai'
+import Logo from '../../UI/Logo/Logo';
+import SubmitButton from '../../UI/SubmitButton/SubmitButton';
 
 
 function Login() {
@@ -14,8 +15,10 @@ const [passIcon,setPassIcon]=useState(true)
 
   return (
   <div className={classes.login}>
-      <div className={classes.loginLogo}><Logo/></div>
-      <div className={classes.rightBox}> 
+      <div className={classes.logoBox}>
+        <Logo/>
+      </div>
+      <div className={classes.rightBox}>
         <Title title="Log in"/>
        <ButtonGroup/>
         <div className={classes.or}>-OR-</div>
@@ -35,7 +38,7 @@ const [passIcon,setPassIcon]=useState(true)
           }
           
           </div>
-          <button className={classes.submit} type="submit">Log in</button>
+         <SubmitButton/>
           <div className={classes.remember}>
             <div>
               Don't have an Account?<Link to="/signUp" className={classes.signLink}>Sign Up</Link> 
@@ -43,7 +46,7 @@ const [passIcon,setPassIcon]=useState(true)
             <div><Link to="/forgotPassword">Forgot Password</Link></div>
           </div>       
         </form>
-      </div>
+        </div>
   </div>)
 }
 

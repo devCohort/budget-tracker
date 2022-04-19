@@ -3,6 +3,7 @@ import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import ButtonGroup from '../../UI/Button Group/ButtonGroup'
 import Logo from '../../UI/Logo/Logo'
+import SubmitButton from '../../UI/SubmitButton/SubmitButton'
 import Title from '../../UI/Title/Title'
 import classes from './SignUpPage.module.css'
 
@@ -13,8 +14,10 @@ function SignUp() {
 
   return (
     <div className={classes.signUp}>
-        <div className={classes.loginBox}> <Logo/> </div>
-        <div className={classes.rightBox}>
+       <div className={classes.logoBox}>
+         <Logo/>
+       </div>
+       <div className={classes.rightBox}>
             <Title title="Sign Up"/>
             <ButtonGroup/>
             <div className={classes.or}>-OR-</div>
@@ -31,7 +34,7 @@ function SignUp() {
             <AiFillEyeInvisible className={classes.passwordEye} onClick={()=>setPassIcon(true)}/>
           }
           </div>
-          <button className={classes.submit} type="submit">Log in</button>
+         <SubmitButton/>
           <div className={classes.remember}>
             <div>
               Already have an Account?   <Link to="/login" className={classes.signLink}>Sign in</Link> 

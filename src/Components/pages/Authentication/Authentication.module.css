@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.authentication {
+  @apply flex h-screen bg-[#DDE7D9];
+}
+.loginBox {
+  @apply w-2/4  grid place-content-center mx-auto;
+}
+.rightBox {
+  @apply w-2/4 p-14 bg-white;
+}
+.h1 {
+  @apply text-8xl font-black;
+}
+.logo {
+  @apply h-60 mx-auto;
+}
+.ellipse{
+  @apply mx-auto;
+}
+.logoBox {
+  @apply grid justify-items-center;
+}
+
+
+.rightBox {
+  border-radius: 6rem;
+}

@@ -6,7 +6,7 @@
   @apply flex flex-row h-screen bg-[#DDE7D9];
 }
 
-.loginLogo {
+.logoBox {
   @apply w-2/4  grid place-content-center;
 }
 
