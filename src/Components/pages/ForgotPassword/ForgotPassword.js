@@ -19,7 +19,7 @@ function ForgotPassword() {
             <form className={classes.form}>
             <input  className={classes.input}type="email" name="email" id="" placeholder='Email Address' />
           
-           <button className={classes.submitBox} type="submit">Submit</button>
+          <Link to='resetPassword'><button className={classes.submitBox} >Submit</button></Link> 
             <div className={classes.remember}>
                 <div className={classes.back}>
                     <IoArrowBackCircleOutline className={classes.backIcon}/>

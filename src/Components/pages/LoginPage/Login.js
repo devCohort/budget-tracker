@@ -38,7 +38,7 @@ const [passIcon,setPassIcon]=useState(true)
           }
           
           </div>
-         <SubmitButton/>
+         <Link to='budgetSetup'><SubmitButton/></Link>
           <div className={classes.remember}>
             <div>
               Don't have an Account?<Link to="/signUp" className={classes.signLink}>Sign Up</Link> 
