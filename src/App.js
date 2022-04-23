@@ -7,6 +7,7 @@ import Login from "./Components/pages/LoginPage/Login"
 import SignUp from "./Components/pages/SignUpPage/SignUp"
 import ResetPassword from "./Components/pages/ResetPassword/ResetPassword";
 import PasswordSuccess from "./Components/pages/PasswordSuccess/passwordSuccess";
+import BudgetSetup from "./Components/pages/BudgetSetup1/BudgetSetup";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
        <Route path="forgotPassword" element={<ForgotPassword/>} />
        <Route path="resetPassword" element={<ResetPassword/>} />
        <Route path="passwordSuccess" element={<PasswordSuccess/>} />
+       <Route path="budgetSetup" element={<BudgetSetup/>}/>
       </Routes>
   
       </div>

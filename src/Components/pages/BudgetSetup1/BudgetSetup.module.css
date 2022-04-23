@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.budgetPage{
+    @apply  bg-[#DDE7D9] h-screen w-screen p-6 ;
+}
+.navigationBar{
+    @apply flex justify-between mb-6;
+}
+.logoutButton{
+    @apply bg-[#111] text-white w-36  h-11 rounded-3xl;  
+}
+.pageBody{
+    @apply bg-[#D1E2C9]  p-20 mx-7;
+}
+p{
+    @apply opacity-60;
+}
+.h1{
+    @apply ml-8 my-3;
+}
+.progressBar{
+    @apply w-full bg-[#8AAF78] rounded-full h-2.5 dark:bg-gray-700 shadow m-5 border border-black;
+}
+.progressInner{
+    @apply bg-[#66785D] h-full rounded-full;
+}
+.imageWallet{
+    @apply flex justify-center;
+}
+
+.h4{
+    @apply text-4xl font-bold flex-wrap  text-center mr-auto ml-auto w-2/4 ;
+}
+
+
+
+
+
+/*custom css*/
+.pageBody{
+    border-radius:70px;
+}

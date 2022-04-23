@@ -3,7 +3,7 @@ import classes from './SubmitButton.module.css'
 
 function SubmitButton() {
   return (
-    <button className={classes.submitBox} type="submit">Submit</button>
+    <button className={classes.submitBox} >Submit</button>
   )
 }
 
